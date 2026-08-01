@@ -635,10 +635,10 @@ function main() {
 </html>`;
 
     fs.writeFileSync(path.join(DIST_DIR, 'index.html'), html);
-    console.log(\`✅ dist/index.html (\${(Buffer.byteLength(html)/1024).toFixed(1)}KB)\`);
-    console.log(\`   Products: \${products.filter(p=>p.active!==0).length}\`);
-    console.log(\`   Categories: \${activeCats.length}\`);
-    console.log(\`   Style: Keychron-inspired clean\`);
+    console.log(`✅ dist/index.html (${(Buffer.byteLength(html)/1024).toFixed(1)}KB)`);
+    console.log(`   Products: ${products.filter(p=>p.active!==0).length}`);
+    console.log(`   Categories: ${activeCats.length}`);
+    console.log(`   Style: Keychron-inspired clean`);
 }
 
 main();
